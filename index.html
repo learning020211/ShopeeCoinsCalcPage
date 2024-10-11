@@ -9,8 +9,7 @@
         (function () {
             var baseHref = "/";
             if (window.location.hostname !== 'localhost') {
-                baseHref = "/SCCP/";
-                //baseHref = "/ShopeeCoinsCalcPage/";
+                baseHref = "/ShopeeCoinsCalcPage/";
             }
             document.write('<base href="' + baseHref + '">');
         })();
@@ -36,6 +35,11 @@
         <a class="dismiss">🗙</a>
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
+    <script>
+        window.selectAllText = (element) => {
+            element.select();
+        }
+    </script>
 </body>
 
 </html>
